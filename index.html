@@ -6,7 +6,9 @@
 	<title>Ejercicio uno Estudios generales</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,700&family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header id="main_header">
@@ -40,11 +42,10 @@
 	</nav>
 	<main class="main_wrapper">
 		<section class="main_section">
-			<h1 class="main_heading">Ejercicio uno, Lista de etiquetas <code>html</code></h1>
 			<article>
-				<header>
-					<h2>Article heading lorem ipsum dolor sit amet</h2>
-					<h3>Sub heading or kicker lorem ipsum dolor sit amet consectetur adipiscing elit mecenas nullam proim</h3>
+				<header class="article_header">
+					<h1 class="main_heading">Ejercicio uno, Lista de etiquetas <code>html</code></h1>
+					<h2 class="article_subheading">Sub heading or kicker lorem ipsum dolor sit amet consectetur adipiscing elit mecenas nullam proim</h2>
 					<div class="info_box">
 						<span class="category">Category:<code> html </code></span>
 						<time class="datetime" datetime="2022-06-14">Junio 14, 2022</time>
@@ -59,6 +60,32 @@
 							<h4 class="article_fig_heading">Imagen de unsplash it (AKA Picsum)</h4>
 						</figcaption>
 					</figure>
+
+					<h3>Multimedia</h3>
+
+					<section id="multimedia">
+						<div class="video_frame">
+							<video controls width="1280" height="720">
+								<source 
+									src="https://assets.mixkit.co/videos/preview/mixkit-couple-having-breakfast-in-the-forest-43175-large.mp4" type="video/mp4" 
+									poster="https://mixkit.imgix.net/videos/preview/mixkit-couple-having-breakfast-in-the-forest-43175-0.jpg?q=80&amp;auto=format%2Ccompress" >
+							</video>
+						</div>
+
+						<iframe src="https://hela.dev" width="100%" height="500" style="border:none;"></iframe>
+
+						<!-- <video 
+							class="video-player__viewer" 
+							data-video-player--video-player-target="video" 
+							data-action="click->video-player--video-player#togglePlay timeupdate->video-player--video-player#progressUpdate loadedmetadata->video-player--video-player#setVideoDuration" 
+							poster="https://mixkit.imgix.net/videos/preview/mixkit-couple-having-breakfast-in-the-forest-43175-0.jpg?q=80&amp;auto=format%2Ccompress" 
+							src="https://assets.mixkit.co/videos/preview/mixkit-couple-having-breakfast-in-the-forest-43175-large.mp4" 
+							controlslist="nodownload" 
+							disablepictureinpicture="" 
+							autoplay="" loop="" muted="">
+						</video> -->
+					</section>
+
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et <strong>dolore magna aliqua.</strong> Ut enim ad minim veniam,
@@ -121,5 +148,6 @@
 			<li class="footer_list_item">Este es item en el footer</li>
 		</ul>
 	</footer>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

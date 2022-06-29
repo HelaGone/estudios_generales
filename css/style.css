@@ -1,8 +1,14 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-
-
+*/
+:root{
+	--primary: #A8FFA6;
+	--secondary: #400524;
+	--accent: deeppink;
+	--light: ghostwhite;
+	--dark: #000a12;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,19 +30,19 @@ blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,
 q:before, q:after {content: '';content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
-*/
 button {background: none;border: none;padding: 0;}
-body{position: relative;font-family: sans-serif;line-height:1.5;}
+body{position: relative;font-family:'Space Grotesk', sans-serif;line-height:1.5;color: var(--dark);background-color: var(--light);}
 figure{margin: 0;}
 h4{margin: 0;}
+h1, h2, h3, h4, h5, h6{ font-family: 'Newsreader', serif; font-weight: 700;}
 /* GENRAL */
-#main_header{background-color: white; padding: 12px;box-shadow: 1px 4px 8px rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;right: 0;z-index: 3;}
+#main_header{background-color: var(--primary); padding: 12px;box-shadow: 1px 4px 8px rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;right: 0;z-index: 3;}
 .flex-container{display:flex; gap: 12px; justify-content:space-between;align-items: center;}
 .main_wrapper{padding-top: 90px;}
 .main_section{padding: 0 8px;}
 #main_footer{background-color: white; padding: 12px;border-top: 1px solid black;margin-top: 12px;}
 .menu{width: 48px;height: 48px;}
-.main_heading{font-size: 24px;line-height:28px;font-weight: 700;}
+.main_heading{font-size: 24px;line-height:28px;font-weight: 700;margin-bottom: 30px;}
 
 .header_fig{margin: 0;padding:0;display: flex;align-items:center;gap: 8px;}
 .header_figcaption{text-align: center;font-size: 14px;}
@@ -44,22 +50,30 @@ h4{margin: 0;}
 .header_fig_heading .smaller{font-size: 12px;font-weight: 300;}
 
 #main_drawer{
-	position: fixed;top: 8vh;right: 0;overflow: hidden;
-	padding: 16px 0;height: calc(100vh - 12vh);width:0;background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;top: 8vh;right: 0;z-index: 2;overflow: hidden;
+	padding: 16px 0;height: calc(100vh - 12vh);width:0;background-color: rgba(0, 10, 18, 0.7);
 	transition: width .5s;
 }
 #main_drawer.opened_menu{width: 100vw;}
 
-.main_menu{background-color: white;
+.main_menu{background-color: var(--accent);
 	max-width: 60%;margin: 0 0 0 auto;text-align: right;
 	height:100%;
 	list-style:none;display:flex;flex-direction: column;gap: 16px;padding: 16px 16px 0 0;}
 .menu_item a{color: black;text-decoration: none;white-space: nowrap;}
 
-.category{display:block;}
 
-.article_fig{border: 1px solid red;}
+/*ARTICLE*/
+.article_header{border-bottom: 3px solid var(--secondary);padding-bottom: 12px;margin-bottom: 24px;}
+.article_subheading{font-weight: 300;line-height:1.2}
+.info_box{margin-top: 12px;font-size: 14px;color: var(--dark);}
+.category{margin-right: 12px;}
+
+.article_fig{margin-bottom: 30px;}
 .image_frame{position: relative;aspect-ratio:16 / 9;}
 
 .article_fig img{width:100%;height:auto;object-fit: cover;}
 .article_figcaption{padding:12px;}
+
+.video_frame{position: relative;aspect-ratio:16 / 9;}
+.video_frame video{width: 100%;height:auto;}
