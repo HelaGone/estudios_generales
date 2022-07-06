@@ -77,3 +77,23 @@ h1, h2, h3, h4, h5, h6{ font-family: 'Newsreader', serif; font-weight: 700;}
 
 .video_frame{position: relative;aspect-ratio:16 / 9;}
 .video_frame video{width: 100%;height:auto;}
+
+/*Footer*/
+.footer_list{display: flex;flex-direction: row;flex-wrap: nowrap;gap: 4px;justify-content: flex-start;align-items: center;}
+.footer_list_item{font-size: 12px;}
+.footer_list_item a{color: var(--secondary);text-decoration: none;}
+.footer_list_item::after{content: "|";font-size: 14px;color: var(--accent);margin-left: 4px;}
+.footer_list_item:last-child::after{content: "";}
+
+
+
+
+
+
+
+
+
+
+
+
+
