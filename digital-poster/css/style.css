@@ -1,0 +1,84 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+:root{
+	--primary: #67002d;
+	--secondary: #a10046;
+	--accent: #fffa73;
+	--light: #1583B3;
+	--dark: #003751;
+	--lighter: #efefef;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+p{line-height:1.5;}
+h1, h2{font-family: 'Ibarra Real Nova', serif;}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+#the_body{background-color: var(--dark);color: var(--lighter);font-family: 'Montserrat', sans-serif;}
+.main_header{box-shadow: 0 4px 8px rgba(0,0,0,0.4);padding: 12px;position: fixed;left: 0;top: 0;width:100%;background-color: var(--primary);}
+
+#main_wrapper{padding: 92px 8px 0 8px;}
+.main_heading{font-size: 3em;}
+#main_section img{width: 100%;height: auto;aspect-ratio: 1 / 1;object-fit: cover;}
+#main_section p{margin-bottom: 20px;}
+
+.section_wrapper{margin-bottom: 40px;}
+.section_wrapper h2{font-size: 2em;margin-bottom: 20px;}
+
+.grid_container{display: grid;grid-template-columns: repeat(2, 1fr);grid-row-gap: 16px;grid-column-gap: 8px;}
+.grid_container .fig_graph:first-child{grid-column: 1 / span 2;}
+
+.fig_graph img{width:100%;height:auto;}
+.fig_grapth_caption h3{line-height: 1.5;}
+
+#main_footer{padding: 12px;}
+
+.flex_container{display: flex;justify-content: space-between;align-items: center;}
+.disclaimers{font-size: 12px;font-weight: 300;}
+
+
+
+
+
+
