@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb:hover {
 #the_body{background-color: var(--dark);color: var(--lighter);font-family: 'Montserrat', sans-serif;}
 .main_header{box-shadow: 0 4px 8px rgba(0,0,0,0.4);padding: 12px;position: fixed;left: 0;top: 0;width:100%;background-color: var(--primary);}
 
-#main_wrapper{padding: 92px 8px 0 8px;}
+#main_wrapper{padding: 92px 8px 0 8px;max-width: 1280px;margin: 0 auto;}
 .main_heading{font-size: 3em;}
 #main_section img{width: 100%;height: auto;aspect-ratio: 1 / 1;object-fit: cover;}
 #main_section p{margin-bottom: 20px;}
@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb:hover {
 .section_wrapper h2{font-size: 2em;margin-bottom: 20px;}
 
 .grid_container{display: grid;grid-template-columns: repeat(2, 1fr);grid-row-gap: 16px;grid-column-gap: 8px;}
-.grid_container .fig_graph:first-child{grid-column: 1 / span 2;}
+.grid_container .fig_graph:last-child{grid-column: 1 / span 2;}
 
 .fig_graph img{width:100%;height:auto;}
 .fig_grapth_caption h3{line-height: 1.5;}
