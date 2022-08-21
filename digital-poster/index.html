@@ -3,56 +3,156 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Digital poster</title>
+	<title>Eats the Dust</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;800&display=swap" rel="stylesheet">
+	<style type="text/css">
+		@font-face {
+		    font-family: 'bankgothic_md_btmedium';
+		    src: url('bankgothic_md_bt_medium-webfont.woff2') format('woff2'),
+		         url('bankgothic_md_bt_medium-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+	</style>
 	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
 	<script type="text/javascript" src="js/index.js"></script>
+
 </head>
 <body id="the_body">
 	<header class="main_header">
-		<h1 class="main_heading">Eats the dust</h1>
+		<h1 class="main_heading"><span>Eats</span> the Dust</h1>
 	</header>
 	<main id="main_wrapper">
 		<section id="main_section" class="section_wrapper">
-			<img src="//unsplash.it/1024/1024/" width="300" height="300" alt="mapa">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				A partir de la pandemia de COVID-19 durante 2020 se incrementaron los accidentes en 
+				motocicleta a pesar de las restricciones a la movilidad que el gobierno impuso a la 
+				población como medida preventiva para disminuír los contagios.
+			</p>
+			<p>
+				Sin embargo, un efecto colateral ésta restricción fue el aumento de accidentes fatales 
+				de motociclistas.
+			</p>
+<!-- 			<p>
+				Uno de estos fenómenos fue la aparición y crecimiento de aplicaciones de reparto a 
+				domicilio, que se convirtieron en pieza fundamental de la vida de los mexicanos ya que
+				por medio de éstas aplicaciones era posible mantenerse en casa y aún así seguir consumiendo 
+				productos de primera necesidad. 
+			</p>
+			<p>
+				Al mismo tiempo, fueron un medio de auto empleo que muchas personas que habían perdido sus 
+				empleos a causa de la pandemia 
+			</p> -->
+			<a href="./mapa" title="Mapa de accidentes en motocicleta en CDMX">
+				<img src="./assets/mapa_motos.jpg" width="800" height="800" alt="Mapa coroplético de accidentes en motocicleta en CDMX" title="Mapa de accidentes en motocicleta en CDMX">
+			</a>
+			<p>
+				En este mapa coroplético de la Ciudad de México se muestran, por un lado, las delegaciones con el 
+				mayor porcentaje de accidentes de tránsito y los porcentajes de accidentes fatales en motocicleta 
+				así como del resto de vehículos que transitan en la vía pública; automóvil, microbús, camión de pasajeros, 
+				camioneta, camión, bicicleta, etc. <span class="red_text">El porcentaje de todas las fatalidades en 
+				estos vehículos es inferior al registrado en accidentes de motocicleta.</span>
 			</p>
 		</section>
 		<section id="graphs_section" class="section_wrapper graphs">
-			<h2 class="sub_heading">Gráficas</h2>
-			<div class="grid_container">
-				<figure class="fig_graph">
-					<img src="//unsplash.it/1280/720/" width="160" height="90" alt="">
-					<figcaption class="fig_grapth_caption">
-						<h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+			<h2 class="sub_heading">¿Qué dicen los datos?</h2>
+			<p>
+				Con datos obtenidos de la Secretaría de Mobilidad (SEMOVI) y del INEGI pudimos hacer las 
+				sigueintes observaciones al respecto del comportamiento de los accidentes de tránsito.
+			</p>
+			<section class="context_section historic">
+				<h3>Contexto histórico</h3>
+				<figure class="fig_graph square">
+					<a href="./charts/accidentes-historico/" title="Gráfica del aumento de accidentes de motocicleta">
+						<img src="./assets/charts/radial_accidentes_historico.jpg" width="800" height="800" alt="Gráfica del aumento de accidentes de motocicleta">
+					</a>
+					<figcaption class="fig_graph_caption">
+						<h4>Cantidad de accidentes de tránsito anuales en México de 1998 a 2021.</h4>
 					</figcaption>
 				</figure>
-				<figure class="fig_graph">
-					<img src="//unsplash.it/1280/720/" width="160" height="90" alt="">
-					<figcaption class="fig_grapth_caption">
-						<h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+				<p>
+					Si bien es claro que el aumento de accidentes de tránsito a nivel nacional iba en aumento de acuerdo 
+					al número de vehículos en la vía pública, se puede notar que a partir de 2008 se había alcanzado un
+					nivel de estabilidad. Esto gracias a políticas públicas, mejoras en las vialidades y ajustes en los 
+					reglamentos de tránsito. 
+				</p>
+				<p>
+					Sin embargo, para 2020 un fenómeno sin precedente en México impactó de forma <em>"Positiva"</em> en la 
+					disminución de accidentes de tránsito. La Pandemia de COVID-19 trajo consigo una restricción a la movilidad
+					que se tradujo en un menor número de vehículos en las calles y por consiguiente un menor número de accidentes 
+					viales.
+				</p>
+				<p>
+					De 2018 a 2020 hubo una reducción del 16.67% en los accidentes de tránsito en México a causa de las restricciones 
+					a la movilidad. Sin embargo, para 2021 los accidentes de tránsito aumentaron 12% puesto que las medidas de restricción 
+					a la movilidad ya se habían levantado.
+				</p>
+				<figure class="fig_graph rect">
+					<img src="./assets/charts/dot-chart-all-years.jpg" width="1440" height="810" alt="Incremento en los accidentes en motocicleta de 1997 a 2021">
+					<figcaption class="fig_graph_caption">
+						<h4>Aumento en el número de accidentes en motocicleta en México de 1997 a 2021.</h4>
 					</figcaption>
 				</figure>
-				<figure class="fig_graph">
-					<img src="//unsplash.it/1280/720/" width="160" height="90" alt="">
-					<figcaption class="fig_grapth_caption">
-						<h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+				<p>
+					El tema central de esta investigación es el comportamiento de los accidentes fatales en motocicleta, cuyo fenómeno 
+					ha venido en aumento sin una disminución significativa a pesar de los esfuerzos en materia de seguridad vial.
+				</p>
+				<p>
+					En la gráfica anterior se puede observar que desde 1997 a 2021 la incidencia de accidentes en motocicleta en México
+					continúa en aumento casi de forma lineal incluso durante 2020 a pesar de las restricciones a la movilidad y de la 
+					clara disminución de accidentes de tránsito en general durante ese año. 
+				</p>
+				<figure class="fig_graph rect">
+					<img src="./assets/charts/scatter_muertes_deleg.jpg" width="1440" height="810" alt="Distribución de accidentes y fatalidades por delegación">
+					<figcaption class="fig_graph_caption">
+						<h4>Distribución de accidentes y fatalidades por delegación en CDMX de 2018 a 2021</h4>
 					</figcaption>
 				</figure>
-			</div>
+				<p>
+					Acá vamos a hablar de cómo el número de accidentes en motocicleta sigue en 
+					aumento sin importar las restricciones a la movilidad durante la pandemia de 2020.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</section>
+
+			<section class="context_section actual">
+				<h3>Contexto actual</h3>
+				<figure class="fig_graph square">
+					<img src="./assets/charts/radar_muertos_moto.jpg" width="800" height="800" alt="Aumento en las fatalidades en accidentes de motocicleta">
+					<figcaption class="fig_graph_caption">
+						<h3>Número de accidentes fatales en motocicleta en la CDMX de 2018 a 2021.</h3>
+					</figcaption>
+				</figure>
+				<p>
+					Acá hablamos del aumento en las muertes de motociclistas durante el periodo antes, 
+					durante y después de la pandemia de 2020.
+				</p>
+				<figure class="fig_graph rect">
+					<img src="./assets/charts/lines-accidentes-moto.jpg" width="1440" height="810" alt="Aumento en las muertes de motociclistas">
+					<figcaption class="fig_graph_caption">
+						<h3>Aumento en las muertes de motociclistas en CDMX de 2018 a 2021.</h3>
+					</figcaption>
+				</figure>
+				<p>
+					Aquí vamos a hablar de cómo los accidentes en motocicleta siguieron en aumento durante 
+					la pandemia de 2020 en comparación con otros tipos de vehículos.
+				</p>
+			</section>
+
 		</section>
 		<section id="conclusion" class="section_wrapper conclusion">
-			<h2>Conclusión</h2>
+			<h2 class="sub_heading">Conclusión</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
