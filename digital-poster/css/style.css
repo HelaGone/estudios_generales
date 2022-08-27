@@ -63,6 +63,7 @@ body::-webkit-scrollbar-thumb:hover {background: var(--accent);}
 #main_section img{width: 100%;height: auto;aspect-ratio: 1 / 1;object-fit: cover;}
 #main_section p{margin-bottom: 20px;}
 .red_text{color: var(--primaryLight);}
+.green_text{color: var(--secondary);}
 
 .section_wrapper{margin-bottom: 40px;}
 .section_wrapper a{color: var(--secondary);}
